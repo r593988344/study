@@ -33,7 +33,6 @@
       Object.keys(data).forEach(key => {
         let obv = new Observer()
         data["_"+key] = data[key]
-        debugger
         // 通过 getter setter 暴露 for 循环中作用域下的 obv，闭包产生
         Object.defineProperty(data, key, {
           get(){
