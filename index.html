@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <nav>导航</nav>
+    <aside>
+        <input type="text">
+        <a href="">退出</a>
+    </aside>
+</div>
+</body>
+<style>
+    .container {
+        display: flex;
+        background: #333;
+        color: #fff;
+    }
+
+    nav {
+        flex-basis: 980px;
+        margin-left: max(190px, calc(50% - 490px));
+    }
+
+    aside {
+        display: flex;
+    }
+
+    a {
+        margin-left: auto;
+        white-space: nowrap;
+        color: white;
+    }
+
+    input {
+        width: 100px;
+        margin-left: -100px;
+    }
+</style>
+</html>

@@ -19,7 +19,7 @@ Function.prototype.mycall = function(thisArg) {
 }
 
 const bar = function() {
-  console.log(this.name, arguments);
+  // console.log(this.name, arguments);
 };
 
 bar.prototype.name = 'bar';
